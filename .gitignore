@@ -1,0 +1,7 @@
+*.doc
+*.docx
+*.exe
+.vscode/
+consistencia/res/
+inputdata/
+ml-20m/
