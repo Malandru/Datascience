@@ -31,9 +31,10 @@ gmap.plot(golden_gate_park_lats, golden_gate_park_lons, 'cornflowerblue', edge_w
 
 # Scatter points
 top_attraction_lats, top_attraction_lons = zip(*locations[:size / 100])
-gmap.scatter(top_attraction_lats, top_attraction_lons, 'cornflowerblue', size=30, marker=False)
+gmap.heatmap(top_attraction_lats, top_attraction_lons, radius=30)
+# gmap.scatter(top_attraction_lats, top_attraction_lons, 'cornflowerblue', size=30, marker=False)
 
 hidden_gem_lat, hidden_gem_lon = 41.850029, -87.6500473
 gmap.marker(hidden_gem_lat, hidden_gem_lon, 'cornflowerblue')
 # Draw
-gmap.draw("my_map.html")
+gmap.draw("heatmap.html")
