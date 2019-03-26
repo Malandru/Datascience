@@ -1,0 +1,9 @@
+#!/bin/sh
+option=$1
+
+if [ $option = 'airline' ] || [ $option = 'airport' ]
+then
+    python delays.py $option ../inputdata/delays.csv
+else
+    echo 'Usage: ./showdelays [airline|airport]'
+fi

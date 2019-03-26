@@ -1,0 +1,9 @@
+#!/bin/sh
+country=$*
+
+if test '' != $country
+then
+    python airports.py $country ../inputdata/airports.csv
+else
+    echo 'Usage: ./bycountry {a_country}'
+fi
